@@ -7,23 +7,28 @@ family=Lato -> Títulos, textos
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-
-  
-/* GERAL */
+/* TOPO */
 
 .topo, .secaoDestaque {
     background-color: var(--azul-escuro);
     color: var(--branco);
 }
+        
+.topo nav {
+    display: none;
+}    
 
+/* JAVASCRIPT SECTION */
+.js {
+    background-color: rgb(241, 239, 239);
+}
+
+/* GERAL */
 figure {
-    width: 200px;
+    text-align: center;
 }
 
 figcaption {
-    display: none;
-}
-.topo figcaption, nav {
     display: none;
 }
 
@@ -63,8 +68,15 @@ div.large-container{
 div.large-container figure{
     width: 100px;
 }
+div.container{
+    width: 100%;
+    max-width: 1140px;
+    margin:0 auto;
+}
+
 
 /*  SECÕES */
+/* DESTAQUE */
 .secaoDestaque h2 {
     font-size: 63px;
 }
@@ -76,23 +88,28 @@ div.large-container figure{
 .secaoDestaqueFormulario {
     font-size:14px;
 }
-div.container{
-    width: 100%;
-    max-width: 1140px;
-    margin:0 auto;
-}
+
+/* SOBRE */
 .secaoSobre h2 {
     font-size: 24px;
 }
 .secaoSobre p {
     font-size: 19px;
 }
+
+/* CURSOS */
+.secaoCursos {
+    text-align: center;
+}
+
 .secaoCursos h3 {
     font-size: 19px;
 }
 .secaoCursos p {
     font-size: 15px;
 }
+
+/* CALENDARIO */
 .secaoCalendar h3{
     font-size: 19px;
 }
@@ -111,26 +128,24 @@ div.container{
     padding: 15px 65px;
     
 }
+/* CONTATO */
 .secaoContato {
     font-size: 15px;
 }
-
-/* HTML */
-html{}
-
   
-/* BODY */
-body{}
+/* MEDIA QUERIES */
+    @media screen and (max-width: 400px) {
 
-  
+    }
 
-header{}
-/* HEADER */
-  
+    @media screen and (min-width: 800px) {
+        
+
+
+    }
+
+
 footer{}
-/* FOOTER */
-
-/* INICIAL */
 
 
 
@@ -143,18 +158,4 @@ footer{}
 ::-webkit-scrollbar-thumb{}
 ::-webkit-scrollbar-corner{}
 ::-webkit-resizer{}
-
-  
-
-/* MEDIA QUERIES */
-    @media screen and (max-width: 400px) {
-       topo figcaption {
-       }
-    }
-
-    @media screen and (min-width: 800px) {
-        
-
-
-    }
 

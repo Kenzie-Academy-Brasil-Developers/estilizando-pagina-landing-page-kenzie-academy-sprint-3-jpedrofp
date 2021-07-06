@@ -11,6 +11,22 @@ family=Lato -> Títulos, textos
   
 /* GERAL */
 
+.topo, .secaoDestaque {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
+
+figure {
+    width: 200px;
+}
+
+figcaption {
+    display: none;
+}
+.topo figcaption, nav {
+    display: none;
+}
+
 h2 {
     font-family: 'Montserrat', sans-serif;
 }
@@ -24,7 +40,8 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
 }
 
 body {
-    max-width: 320px;
+    max-width: 400px;
+    margin: auto;
 }
 img{
     max-width: 800px;
@@ -43,6 +60,10 @@ div.large-container{
     margin:0 auto;
     font-size: 13px;
 }
+div.large-container figure{
+    width: 100px;
+}
+
 /*  SECÕES */
 .secaoDestaque h2 {
     font-size: 63px;
@@ -83,6 +104,12 @@ div.container{
 }
 .calendario-data-rodape button{
     font-size: 32px;
+    background-color: var(--azul);
+    color: var(--branco);
+    border-radius: 7px;
+    border-color: var(--azul);
+    padding: 15px 65px;
+    
 }
 .secaoContato {
     font-size: 15px;
@@ -120,8 +147,14 @@ footer{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 800px) {
+    @media screen and (max-width: 400px) {
+       topo figcaption {
+       }
+    }
 
+    @media screen and (min-width: 800px) {
+        
 
 
     }
+

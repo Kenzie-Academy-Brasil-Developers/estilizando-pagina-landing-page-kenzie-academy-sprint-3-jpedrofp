@@ -1,43 +1,30 @@
-
-/*
-Theme Name: Landing Page Kenzie Academy
-Theme URI: https://kenzie.com.br/
-Author: Kenzie Academy 
-Author URI: https://kenzie.com.br/
-Description: Descrção do thema.
-Version: 1.0
-Text Domain: https://kenzie.com.br/
-
---------------------------------------------
-ESTRUTURAÇÃO BASE
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** ESTILOS GERAIS
-**** BODY
-**** HEADER
-**** FOOTER
-**** PÁGINA INICIAL
-**** EXTRAS
-**** @MEDIA
-
+/*  
 family=Montserrat -> Menus
 family=Lato -> Títulos, textos
 */
 
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* FONTS */
 
-/* VARIÁVEIS */
-:root{}
+
+
   
 /* GERAL */
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
     list-style: none;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    max-width: 320px;
 }
 img{
     max-width: 800px;
@@ -54,35 +41,72 @@ div.large-container{
     width: 100%;
     max-width: 1170px;
     margin:0 auto;
+    font-size: 13px;
+}
+/*  SECÕES */
+.secaoDestaque h2 {
+    font-size: 63px;
+}
+
+.secaoDestaque p {
+    font-size: 21px;
+}
+
+.secaoDestaqueFormulario {
+    font-size:14px;
 }
 div.container{
     width: 100%;
     max-width: 1140px;
     margin:0 auto;
 }
-/* GERAL */
-  
+.secaoSobre h2 {
+    font-size: 24px;
+}
+.secaoSobre p {
+    font-size: 19px;
+}
+.secaoCursos h3 {
+    font-size: 19px;
+}
+.secaoCursos p {
+    font-size: 15px;
+}
+.secaoCalendar h3{
+    font-size: 19px;
+}
+.secaoCalendar p{
+    font-size: 15px;
+}
+.calendario-data {
+    font-size: 36px;
+}
+.calendario-data-rodape button{
+    font-size: 32px;
+}
+.secaoContato {
+    font-size: 15px;
+}
+
 /* HTML */
 html{}
-/* HTML */
+
   
 /* BODY */
 body{}
-/* BODY */
+
   
-/* HEADER */
+
 header{}
 /* HEADER */
   
-/* FOOTER */
 footer{}
 /* FOOTER */
 
 /* INICIAL */
-main{}
-/* INICIAL */
 
-/* EXTRAS */
+
+
 
 /* para estilizar a scrollbar */
 ::-webkit-scrollbar{}
@@ -93,11 +117,11 @@ main{}
 ::-webkit-scrollbar-corner{}
 ::-webkit-resizer{}
 
-/* EXTRAS */
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
-    @media screen and (min-width: 800px) {}
-/* MEDIA QUERIES */
+    @media screen and (min-width: 800px) {
+
+
+
+    }

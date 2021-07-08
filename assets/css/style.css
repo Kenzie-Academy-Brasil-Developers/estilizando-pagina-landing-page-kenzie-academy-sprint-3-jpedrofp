@@ -459,7 +459,7 @@ main {}
             align-items: center;
             flex-wrap: wrap;
             margin: 0 auto;
-            border: steelblue 2px solid;
+            /* border: steelblue 2px solid; */
         }
         .calendario {
             display: flex;

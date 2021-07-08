@@ -1,37 +1,19 @@
-/*  
-family=Montserrat -> Menus
-family=Lato -> Títulos, textos
-*/
-
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 /* TOPO */
-
 .topo, .secaoDestaque {
     background-color: var(--azul-escuro);
     color: var(--branco);
-}
-        
+}        
 .topo nav {
     display: none;
 }    
 
-/* JAVASCRIPT SECTION */
-.js {
-    background-color: rgb(241, 239, 239);
-}
-
 /* GERAL */
-figure {
-    text-align: center;
-}
-
 figcaption {
     display: none;
 }
-
 h2 {
     font-family: 'Montserrat', sans-serif;
 }
@@ -43,9 +25,9 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     list-style: none;
     font-family: 'Lato', sans-serif;
 }
-
 body {
-    max-width: 400px;
+    max-width: 380px;
+
     margin: auto;
 }
 img{
@@ -65,8 +47,9 @@ div.large-container{
     margin:0 auto;
     font-size: 13px;
 }
-div.large-container figure{
+.topo large-container figure{
     width: 100px;
+    margin-left: 0;
 }
 div.container{
     width: 100%;
@@ -74,29 +57,85 @@ div.container{
     margin:0 auto;
 }
 
-
-/*  SECÕES */
 /* DESTAQUE */
+.secaoDestaque {
+    padding: 20px;
+    text-align: center;
+}
 .secaoDestaque h2 {
     font-size: 63px;
 }
-
 .secaoDestaque p {
     font-size: 21px;
 }
-
-.secaoDestaqueFormulario {
+.secaoDestaqueFormulario button {
     font-size:14px;
+    background-color: var(--azul);
+    color: white;
+    display: inline;
 }
 
-/* SOBRE */
-.secaoSobre h2 {
+/* PYTHON SECTION*/
+.python {
+    padding-bottom: 50px;
+}
+
+.pttext {
+    padding: 25px;
+    line-height: 2em;
+    margin: 50px;;
+}
+.pttext h2 {
     font-size: 24px;
+    padding: 0px 0px 60px 0px;
 }
-.secaoSobre p {
+.pttext p {
     font-size: 19px;
+    font-weight: 500;
+    padding-bottom: 50px;
+
+}
+#space {
+    color: var(--cinza-claro);       
+}
+/* SOBRE */
+.secaoSobre figure {
+    text-align: center;
+}
+.secaoSobre button {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    padding: 18px 80px;
+    border-radius: 5px;
+    border-color: lightgray;
+    background-color: white;
+    border-style:double;
 }
 
+/* JAVASCRIPT SECTION */
+.js {
+    width: 380px;
+    background-color: rgb(241, 239, 239);
+    margin-right: 73px;
+}
+.js h2 {
+    margin: 20px 50px 30px 100px;
+}
+.js ul {
+    margin: 60px 75px 70px 75px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    list-style:disc;
+    color:gray;
+    line-height: 2.0;
+}
+.jsfigure{
+    padding-top: 50px;
+}
+
+
+    
 /* CURSOS */
 .secaoCursos {
     text-align: center;
@@ -110,6 +149,9 @@ div.container{
 }
 
 /* CALENDARIO */
+.secaoCalendar {
+    padding-bottom: 70px;
+}
 .secaoCalendar h3{
     font-size: 19px;
 }
@@ -118,6 +160,7 @@ div.container{
 }
 .calendario-data {
     font-size: 36px;
+
 }
 .calendario-data-rodape button{
     font-size: 32px;
@@ -132,9 +175,23 @@ div.container{
 .secaoContato {
     font-size: 15px;
 }
-  
+.secaoContato h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+
+    padding-bottom: 50px;
+}
+
+.secaoContato-informacoes {
+    position: relative;
+}
+
+footer{
+    display: none;
+}
 /* MEDIA QUERIES */
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 475px) {
 
     }
 
@@ -145,7 +202,6 @@ div.container{
     }
 
 
-footer{}
 
 
 

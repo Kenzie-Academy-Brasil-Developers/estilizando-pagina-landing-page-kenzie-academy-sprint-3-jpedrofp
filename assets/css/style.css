@@ -287,9 +287,8 @@ main {}
         text-align: center;
     }
     
-    .calendario {
+    .secaoCalendar .calendario {
         width: 220px;
-        border: rgb(0, 0, 0) 1px solid;
         margin: 0 auto;
     }
     
@@ -304,6 +303,11 @@ main {}
         border: 1px solid blue;
         background-color: rgb(7, 7, 102);
         color: white;
+    }
+    
+    .secaoCalendar .calendario li {
+        border: black 2px solid;
+        margin-bottom: 40px;
     }
     
     .secaoCalendar h2 {
@@ -448,6 +452,32 @@ main {}
             flex-grow: 1;
             border: tomato 2px solid;
         }
-        .topo .large-container input:checked~nav {}
+        .secaoCursos article ul {
+            max-width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            border: steelblue 2px solid;
+        }
+        .calendario {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .calendario li {
+            margin: 20px;
+            justify-content: space-between;
+        }
+        .secaoContato .flex {
+            flex-direction: row;
+            width: 100%;
+        }
+        .secaoDestaqueFormulario input {
+            width: 20%;
+        }
+        1 .secaoContato .flex .flex-col .form-input-model input {}
     }
     /* MEDIA QUERIES */

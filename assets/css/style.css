@@ -372,8 +372,7 @@ img {
         text-decoration: none;
         font-weight: lighter;
         width: 100%;
-        margin: 0% auto;
-        width: 100%;
+        position: relative;
         background-color: var(--cinza-claro);
         margin-top: 50px;
         padding-bottom: 50px;
@@ -456,24 +455,15 @@ img {
     @media only screen and (min-width:778px) {
 
         /*   TOPO   */
-        .topo label {
+         .topo label{
             display: none;
         }
-        .large-container nav {
-            border: none;
-            display: flex;
-            height: auto;
-            width: 100%;
-            flex-direction: column;
-            justify-content: left;
-            background-color: transparent;
-            border: tomato 2px solid;
+        /*
+        .topo .large-container nav{
+            display:flex;
         }
-        .large-container ul {
-            flex-direction: column-reverse;
-            flex-grow: 1;
-            border: tomato 2px solid;
-        }
+             */
+
         /*   DESTAQUE */
         .secaoDestaque {
             background-image: url(../img/background-destaque.webp);
@@ -517,7 +507,6 @@ img {
 
         .secaoCursos {
             margin-top: 50px;
-            margin-bottom: 100px;
         }
         .secaoCursos article ul {
             max-width: 1000px;
@@ -535,7 +524,7 @@ img {
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            padding-bottom: 100px;
+    
         }
         .calendario li {
             margin: 20px;
@@ -549,16 +538,30 @@ img {
         }
 
         .secaoContato h2 {
-            padding-left: 500px;
-            width: 375px;
+            align-items: stretch;
+            padding-left: 340px;
+            padding-right: 20px;
+            width: 400px;
         }
 
+        .secaoContato-informacoes p {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            text-align: left;
+            padding-bottom: 50px;
+            padding-left: 60px;
+        }
+
+        .secaoContato-informacoes {
+ 
+        }
         .secaoDestaqueFormulario input {
-            width: 20%;
+            min-width: 400px;
         }
 
         .form-submit-model input {
-            margin-left: 275px;
+            margin-left: 175px;
             width: 100px;
             height: 35px;
             border-radius: 5px;

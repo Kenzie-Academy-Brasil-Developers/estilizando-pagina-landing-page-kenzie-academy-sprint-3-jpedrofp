@@ -30,6 +30,9 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
+img {
+    max-width: 800px;
+}
 
 /*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
 
@@ -38,10 +41,11 @@ h2 {
     /*   GERAL   */
     
     /*   CABEÇALHO/TOPO  */
+ 
     .large-container nav {
-        border: black 1px solid;
+        border: rgb(255, 255, 255) 1px solid;
         position: absolute;
-        background-color: rgb(22, 39, 194);
+        background-color: var(--azul);
         right: 100%;
         top: 0;
         padding: 45px 20px;
@@ -65,7 +69,9 @@ h2 {
     }
     
     body header label {
-        border: solid 1px #000;
+        border: solid 1px rgb(255, 255, 255);
+        background-color: var(--azul-escuro);
+        display: block;
         width: 35px;
         border-radius: 5px;
         position: absolute;
@@ -73,6 +79,7 @@ h2 {
         padding: 3px;
         z-index: 3;
         cursor: pointer;
+        margin: 5px 5px;
     }
     
     body header>label span {
@@ -91,6 +98,10 @@ h2 {
     .topo .large-container img {
         width: 45px;
     }
+
+    .large-container {
+        background-color: var(--azul-escuro);
+    }
     
     .large-container li a {
         color: ivory;
@@ -101,6 +112,7 @@ h2 {
         height: 48px;
         margin: 0% auto;
         display: inline-block;
+        
     }
 
     /*   CABEÇALHO SESSÃO DESTAQUE  */
@@ -158,6 +170,10 @@ h2 {
     }
     
     /* SOBRE */
+
+    .python {
+        margin: 100px;
+    }
     .secaoSobre figure {
         text-align: center;
     }
@@ -173,7 +189,7 @@ h2 {
     }
     /* PYTHON SECTION*/
     .pythonImg {
-        padding-bottom: 50px;
+        padding: ;
     }
 
     .pythonText {
@@ -198,7 +214,7 @@ h2 {
 
     /* JAVASCRIPT SECTION */
     .js {
-        background-color: rgb(241, 239, 239);
+        background-color: var(--cinza-claro);
     }
     .js h2 {
         margin: 20px 50px 30px 100px; 
@@ -209,7 +225,7 @@ h2 {
         padding-left: 30px;
         padding-bottom: 50px;
         list-style:disc;
-        color:gray;
+        color: var(--cinza);
         line-height: 2.0;
     }
     .jsImg{
@@ -421,9 +437,10 @@ h2 {
     footer{
         display: none;
     }
+}
 
     /*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
-    @media only screen and (min-width:1024px) {
+    @media only screen and (min-width:778px) {
 
         /*   TOPO   */
         .topo label {
@@ -446,9 +463,47 @@ h2 {
         }
         /*   DESTAQUE */
         .secaoDestaque {
-        background-image: url(../img/background-destaque.webp);
+            background-image: url(../img/background-destaque.webp);
+            height: 700px;
+            display: flex;
+        }
+
+        /* SOBRE */
+        .python {
+            margin: 150px;
+            display:flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .pythonImg img {
+            height: 400px;
+            padding-top: 50px;
+        }
+
+        .pythonText {
+            margin-left: 300px;
+            margin-right: 50px;
+        }
+        .js {
+            display:flex;
+            justify-content: center;
+            flex-direction: row;
+            padding: 150px 150px 150px;
+        }
+        .jsImg img {
+            width: 400px;
+        }
+
+        .jsText {
+            padding: 70px;
         }
         /*   CURSOS   */
+
+        .secaoCursos {
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
         .secaoCursos article ul {
             max-width: 1000px;
             display: flex;
@@ -456,7 +511,7 @@ h2 {
             align-items: center;
             flex-wrap: wrap;
             margin: 0 auto;
-            /* border: steelblue 2px solid; */
+            padding: 0px 20px 0px 20px;
         }
 
         /*   CALENDARIO   */
@@ -465,6 +520,7 @@ h2 {
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            padding-bottom: 100px;
         }
         .calendario li {
             margin: 20px;
@@ -475,16 +531,20 @@ h2 {
         .secaoContato .flex {
             flex-direction: row;
             width: 100%;
+            background-color: var(--cinza-claro);
+            margin-top: 10px;
+            padding-top: 50px;
         }
 
         .secaoDestaqueFormulario input {
             width: 20%;
         }
+
+        footer{
+            display:flex;
+            justify-content: center;
+        }
     }
-
-
-
-
 
 /* para estilizar a scrollbar */
 ::-webkit-scrollbar{}

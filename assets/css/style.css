@@ -21,6 +21,8 @@ ul {
     box-sizing: border-box;
     font-family: sans-serif;
     list-style: none;
+    max-width: 1126px;
+    margin: 0 auto;
 }
 .hidden, figcaption {
     display: none;
@@ -32,7 +34,48 @@ h2 {
 
 img {
     max-width: 800px;
+    padding: 15px;
 }
+
+#navD {
+    margin-top: 15px;
+    margin-right: 75px;
+    opacity: 100%;
+}
+
+#navD .a {
+    font-size: 13px
+}
+
+#navD:hover  {
+    cursor:pointer;
+}
+.large-container #navM {
+    border: rgb(255, 255, 255) 1px solid;
+    position: absolute;
+    background-color: var(--azul);
+    right: 100%;
+    top: 0;
+    padding: 45px 20px;
+    text-align: left;
+    font-weight: bolder;
+    width: 224px;
+    height: 50%;
+}
+
+.large-container li a {
+    color: ivory;
+}
+
+.topo .large-container input:checked~#navM {
+    right: 0%;
+    transition: 0.5s;
+}
+
+.topo .large-container input {
+    display: none;
+}
+
 
 /*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
 
@@ -42,32 +85,10 @@ img {
     
     /*   CABEÇALHO/TOPO  */
  
-    .large-container nav {
-        border: rgb(255, 255, 255) 1px solid;
-        position: absolute;
-        background-color: var(--azul);
-        right: 100%;
-        top: 0;
-        padding: 45px 20px;
-        text-align: left;
-        font-weight: bolder;
-        width: 224px;
-        height: 50%;
-    }
-    
-    .large-container li a {
-        color: ivory;
-    }
-    
-    .topo .large-container input:checked~nav {
-        right: 0%;
-        transition: 0.5s;
-    }
-    
-    .topo .large-container input {
+
+    #navD {
         display: none;
     }
-    
     body header label {
         border: solid 1px rgb(255, 255, 255);
         background-color: var(--azul-escuro);
@@ -103,7 +124,7 @@ img {
         background-color: var(--azul-escuro);
     }
     
-    .large-container li a {
+    .large-container li .a {
         color: ivory;
     }
     
@@ -157,6 +178,14 @@ img {
         color: white;
         background-color: #007aff;
     }
+
+    .secaoDestaqueFormulario button:hover {
+        background-color: white;
+        border: 1px var(--azul-escuro) solid;
+        border-radius: 2px;
+        color: var(--azul-escuro);
+    }
+
     
     .secaoDestaqueFormulario input {
         font-size: 14px;
@@ -166,8 +195,7 @@ img {
     }
     
     .secaoDestaqueFormulario {
-        display: flex;
-        justify-content: center;
+        text-align: center;
         align-items: center;
     }
     
@@ -188,6 +216,14 @@ img {
         background-color: var(--branco);
         border-style:double;
     }
+
+
+    .secaoSobre button:hover {
+        border: var(--azul-escuro) solid 2px;
+        background-color: var(--azul-escuro);
+        color: white;
+    }
+
     /* PYTHON SECTION*/
     .pythonImg img{
         height:180px;
@@ -364,6 +400,15 @@ img {
         margin-right: 12px;
     }
 
+
+    .calendario-data-rodape button:hover {
+        background-color: white;
+        border: 2px var(--azul-escuro) solid;
+        border-radius: 6px;
+        color: var(--azul);
+    }
+
+
     /*   CONTATO   */
     .secaoContato {
         display: inline-block;
@@ -446,6 +491,11 @@ img {
         height: 30px;
         border-radius: 5px;
     }
+    .form-submit-model input:hover {
+        background-color: var(--azul);
+        border-radius: 6px;
+        color: white;
+    
     footer{
         display: none;
     }
@@ -459,10 +509,46 @@ img {
             display: none;
         }
         /*
-        .topo .large-container nav{
+        .topo .large-container #navM{ 
             display:flex;
         }
              */
+
+    
+            .large-container li a {
+                color: ivory;
+            }
+            
+            .topo .large-container #navM {
+                display: none;
+            }
+            #navD {
+                display: flex;
+                flex-direction: row;
+                float: right;
+            }
+            
+            .a{
+                padding: 20px;
+                margin-top: 
+
+            }
+            /* .topo .large-container input {
+                display: flex;
+            }
+             */
+
+
+
+
+
+
+
+
+
+
+
+
 
         /*   DESTAQUE */
         .secaoDestaque {

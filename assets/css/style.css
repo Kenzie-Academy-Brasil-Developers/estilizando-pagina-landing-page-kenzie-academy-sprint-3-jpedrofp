@@ -389,8 +389,7 @@ img {
         font-size: 36px;
         text-align: center;
         padding-top: 40px;
-        border: 1px solid blue;
-        background-color: rgb(7, 7, 102);
+        background-color: var(--azul-escuro);
         color: white;
     }
     
@@ -449,6 +448,7 @@ img {
         align-items: center;
         font-size: 36px;
         margin-bottom: 15px;
+        color: var(--cinza)
     }
     
     /* - Botão “Sign Up”: `font-size: 32px;` */
@@ -530,7 +530,7 @@ img {
         margin-left: 25px;
         color: var(--cinza);
         opacity: 0.7;
-    
+        font-size: 15px;
     }    
     .secaoContato-informacoes ul img {
         width: 18px;       
